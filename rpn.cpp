@@ -1,7 +1,7 @@
 
 #include <bits/stdc++.h>
 using namespace std;
-int eval(vector<string>& tokens)
+int solve(vector<string>& tokens)
 {
     stack<int> st;
     for (int i = 0; i < tokens.size(); i++) {
@@ -35,7 +35,7 @@ int main(){
     for(int j=0;j<tokens.size();j++){
         cin>>tokens[j];
     }
-    int res= eval(tokens);
+    int res= solve(tokens);
     cout<<res<<endl;
 
     
